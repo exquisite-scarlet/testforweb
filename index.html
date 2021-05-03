@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino Project</title>
+
+    <style>
+        .nav {
+            height: 41px;
+            border-top: 3px rgb(255, 179, 204);
+            border-bottom: 4px solid #edeef0;
+            background-image: url(images/safari.jpg);
+            line-height: 41px;
+            position: fixed;
+        }
+        
+        .nav a {
+            font-size: 20px;
+            font-family: '华文彩云';
+            font-weight: 900;
+            color: rgb(36, 2, 75);
+            text-decoration: none;
+            display: inline-block;
+            padding: 0 40px;
+            height: 40px;
+        }
+        
+        a.contact {
+            margin-right: 0px;
+            margin-left: 600px;
+        }
+        
+        .nav a:hover {
+            background-color: hotpink;
+            color: rgb(255, 255, 255);
+        }
+        
+        a.contact:hover {
+            background-image: url(images/face.png);
+        }
+        
+        body {
+            background-image: url(images/background.jpg);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-position: center 0;
+            background-attachment: fixed;
+        }
+        
+        .empty {
+            height: 200px;
+            background-image: url(images/tik.gif);
+            background-repeat: no-repeat;
+        }
+        
+        table {
+            margin: auto;
+            width: 1100px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+        
+        .STYLE3 {
+            font-size: 35px;
+            font-family: "华文行楷";
+            font-weight: initial;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 2px black;
+        }
+        
+        .STYLE4 {
+            font-size: larger;
+            font-weight: lighter;
+            font-family: "华文新魏";
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 2px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="index.html">项目综述</a>
+        <a href="css/history.html">项目进展</a>
+        <a href="ex.html">项目成果</a>
+        <a href="contact.html" class="contact">滑稽</a>
+    </div>
+    <div class="empty">
+
+
+    </div>
+
+    <table>
+        <!--DWLayoutDefaultTable-->
+        <tr>
+            <td width="9" height="55"></td>
+            <td width="90"></td>
+            <td width="617" valign="top" background="images/title.png">
+                <h3>》<span class="STYLE3"><span class="STYLE5">课题名称</span>：</span>
+                </h3>
+                <h3> <span class="STYLE3">别踩白块物理外挂</span>
+                </h3>
+                <h4 align="justify"> <span class="STYLE4">    小组成员：段宇丞，赵中远，肖梦飞</span></h4>
+            </td>
+            <td width="682" rowspan="2" valign="top" onfocus="MM_showHideLayers('Layer1','','show','Layer2','','hide','Layer3','','hide');MM_showHideLayers('Layer1','','hide','Layer2','','show','Layer3','','hide');MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','show')">
+                <param name="movie" value="../../../../Pictures/Camera Roll/lucas-alexander-LOlMe8HfofI-unsplash.jpg" />
+                <param name="quality" value="high" />
+                <h1>&nbsp;</h1>
+                <h3>&nbsp;</h3>
+                <h1>&nbsp;</h1>
+                <h3>》<span class="STYLE5">实物图片</span></h3>
+                <p><img src="images/1.jpg" name="obj" width="653" height="453" border="0" id="obj" /></p>
+            </td>
+            <td width="73">&nbsp;</td>
+            <td width="19" rowspan="4"></td>
+        </tr>
+
+        <tr>
+            <td height="553"></td>
+            <td></td>
+            <td valign="top">
+                <hr size="3" />
+                <h3>》<span class="STYLE5">项目介绍</span></h3>
+                <p>
+                    <script language="JavaScript" type="text/javascript">
+                        var curIndex = 0;
+                        var timeInterval = 3000;
+                        var arr = new Array();
+                        arr[0] = "images/1.jpg";
+                        arr[1] = "images/2.jpg";
+                        arr[2] = "images/3.jpg";
+                        setInterval(changeImg, timeInterval);
+
+                        function changeImg() {
+                            var obj = document.getElementById("obj");
+                            if (curIndex == arr.length - 1) {
+                                curIndex = 0;
+                            } else {
+                                curIndex += 1;
+                            }
+                            obj.src = arr[curIndex];
+                        }
+                    </script>
+                </p>
+
+                <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td height="533"></td>
+            <td></td>
+            <td colspan="2" valign="top">
+                <h3>》<span class="STYLE5">演示视频</span></h3>
+                <iframe height=498 width=510 src="vedios/23.mp4" frameborder=0 'allowfullscreen'></iframe>
+                <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td height="1730"></td>
+            <td></td>
+            <td colspan="2" valign="top">
+                <hr size="4" />
+                <h3>
+                    <div class="entry-content clearfix" itemprop="articleBody description">
+                        <ul id="markdown-toc">
+                            <li><a href="#section" id="markdown-toc-section">一、概述</a></li>
+                            <li><a href="#section-1" id="markdown-toc-section-1">二、黑块的识别：光敏传感器</a></li>
+                            <li><a href="#section-2" id="markdown-toc-section-2">三、触摸屏的触发</a>
+                                <ul>
+                                    <li><a href="#section-2" id="markdown-toc-section-2">3.1 舵机加电容笔</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#section-3" id="markdown-toc-section-3">四、LED灯带随音乐律动</a>
+                                <ul>
+                                    <li><a href="#section-4" id="markdown-toc-section-4">4.1 音频采集 </a></li>
+                                    <li><a href="#section-5" id="markdown-toc-section-4">4.2 音频处理 </a></li>
+                                    <li><a href="#section-6" id="markdown-toc-section-4">4.3 信号输出控制LED灯带 </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#section-7" id="markdown-toc-section-6">五、整体组装</a>
+                                <ul>
+                                    <li><a href="#section-8" id="markdown-toc-section-6">5.1 黑块检测和触摸的结合</a></li>
+                                    <li><a href="#section-9" id="markdown-toc-section-7">5.2 安装与调试</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h2 id="section">一、概述</h2>
+                        <h3>整个系统分为三个部分：</h3>
+                        <p class="STYLE6">1、黑块的识别 </p>
+                        <p class="STYLE6"> 2、触摸屏的触发</p>
+                        <p class="STYLE6">3、LED灯带随音乐律动</p>
+                        <p class="STYLE6">对于黑块的识别，屏幕上白色和黑色的光线差别比较大，所以用光敏传感器可以很方便地完成。</p>
+                        <p class="STYLE6">而触摸屏的触发方法，我们采用的是用机械臂末端固定电容笔实现点击，响应和点击速度都较为可观。<br />
+                            <br /> 我们设计的一个亮点就是加入了LED灯带随音乐律动，给人以视觉上的冲击，大大弱化了机械运转的单调感和机器的冰冷感。
+                        </p>
+                        <h2 id="section-1">二、黑块识别：光敏传感器</h2>
+                        <p class="STYLE6">光敏传感器是对外界光信号或光辐射有响应或转换功能的敏感装置。<br /> 光敏传感器是把光信号变成电信号的一种传感器，它利用半导体的光电效应制成的一种电阻值随入射光的强弱而改变的电阻器;
+                            <br /> 入射光强,电阻减小,入射光弱,电阻增大。可用电位器（螺丝）调节亮度阀值，亮度大于设定值时DO输出低电平，反之输出高电平。
+                        </p>
+                        <p class="STYLE6">在屏幕亮度很高时，黑块和白快部分具有较大的光强差异，调节电位器使传感器恰好能识别这种差异，达到较好的识别效果<br /> 所以在使用时要关掉手机或者平板的自动背光调节，避免干扰。
+                        </p>
+                        <p><img src="images/9.jpg" width="255" height="279" /></p>
+
+                        <h2 id="section-2">三、触摸屏的触发</h2>
+                        <h3>3.1、舵机加电容笔</h3>
+                        <p class="STYLE6">这一部分我们采用了舵机控制机械臂下落到指定的角度，末端固定的电容笔正好点击到屏幕，停留一段时间之后再抬起机械臂，<br /> 从而模拟人手点击，实现触屏。同时将电容笔连接电源，更容易实现触屏。
+                        </p>
+                        <h2 id="section-3">四、LED灯带随音乐律动</h2>
+                        <h3 id="section-4">4.1 音频采集</h3>
+                        <p class="STYLE6">这一部分我们采用的是集成驻极体话筒，其上布有细密的电容和电阻，还有一个四路运算放大器和一个继电器，<br /> 此外有两个绿色LED作为音量的一个可视化表征。
+                        </p>
+                        <p><img src="images/5.jpg" width="268" height="149" /></p>
+                        <h3 id="section-5">4.2 音频处理</h3>
+                        <p class="STYLE6">这一部分使用FFT快速离散傅里叶变换函数对音频信号进行细致的处理，并以频率、音量两个因素作为因变量，制作输出函数输出到LED灯带中。<br /> 我们使用了互联网上的FFT_3函数库，该函数库使用离散傅里叶变换，会截取自主设定范围内的声信号变换为自己选定的频率范围内的频谱。
+                        </p>
+                        <h3 id="section-6">4.3 信号输出控制LED灯带</h3>
+                        <p class="STYLE6">我们采用了WS2801灯带，使用的是Adafruit-WS2801-Library函数库，它是一款专门用来控制WS2801灯带的库。<br /> WS2801集成了32个LED，代码中采用了三种特殊发光模式：rainbow, rainbowCycle, colorWipe。分别是在灯带上显示彩色、彩色轮转、同一颜色。<br /> 对于色轮的问题，我们采取的是将255数值三等分，每一部分对应两种纯基色的线性混合（Wheels函数），这样我们得到的就是一种纯色光，而不存在曝光问题。
+                        </p>
+                        <p class="STYLE6"><img src="images/8.jpg" width="201" height="314" /><img src="images/7.png" width="201" height="314" /><img src="images/6.jpg" width="201" height="313" /></p>
+                        <h2 id="section-7">五、整体的组装和调试</h2>
+                        <h3 id="section-8">5.1 黑块检测和触摸的结合</h3>
+                        <p class="STYLE6">二节介绍了如何通光敏传感器识别黑块<br /> 3.1节介绍了触摸屏的触发方式。
+                        </p>
+
+                        <p class="STYLE6">把两个电路结合起来，接到单片机板子上，有单片机接受黑块检测信号，再控制舵机点击屏幕。</p>
+                        <p class="STYLE6">当然别踩白块儿有4路，需要四个光敏传感器和四个舵机组成四路电路。</p>
+                        <p><img src="images/4.jpg" width="587" height="391" /></p>
+                        <h2 id="section-9">5.2 安装与调试</h2>
+                        <p><strong>1、触摸屏的触发</strong></p>
+                        <p class="STYLE6">机械臂下落角度和点击时间要进行不断的调试，从而找到一个合适的角度和触摸时间，使电容笔很好的点击到屏幕，<br /> 不至于因力度过大使机器发生大的抖动，损坏一些零件；
+                            <br /> 也不至于因角度过小使接触不充分或因接触时间太少，点击不到屏幕。
+                        </p>
+                        <p><strong>2、触点和光敏传感器的位置</strong></p>
+                        <p><span class="STYLE6">将光敏传感器放置在触点上方，而触点位置也不要太偏下，否则当黑块下落速度稍快就很容易会出现漏点的情况。</span> </p>
+                        <p><strong>3、识别算法调试</strong></p>
+                        <p><span class="STYLE6">由于有四个光敏传感器，最简单的算法是在一个loop循环中依次判别，只要有黑块信息就启动对应的舵机函数，但是这种方法在调试的过程中会出现重复敲击的状况，很容易敲错。<br />
+        然后进行了改进，考虑到游戏中不存在连续两个黑块需要敲击的情况，和较少的并排两个黑块需要敲击的情况，我们采用了迭代法，即计录四个传感器中采集到黑块的那一个<br />
+        传感器信号，然后与上一轮触发敲击的传感器编号相比较，只有当这两个信号不同时，才会触发这一轮的敲击,然后再将这一轮的信号投入到下一轮的信号当中比较，以此类推。<br />
+            <br />
+            </span><strong>4、傅立叶算法调试</strong><span class="STYLE6">
+            </span>
+                            <p class="STYLE6">在实际操作中发现，我们使用的函数库可采样的范围有限，故调试时采取了多种方法，包括对原声音信号进行直接类频率分析、对FFT频谱进一步分析等一系列操作，最终确认了<br /> 以声音频谱的标准差和频谱总强度作为控制LED灯阵的变量。
+                                <br /> 另外一方面，由于频谱最大值不能很好展示主旋律，仔细观察低音和高音的频谱图的区别，我们尝试了求频谱最大间隔、取频谱众数、取声信号峰值间隔的和、取频谱标准差、
+                                <br /> 取频谱绝对差等方法，最终觉得频谱标准差的效果最好。
+                            </p>
+                            <p class="STYLE6">
+
+                            </p>
+                            <p class="STYLE6">到这,本项目就简单介绍完了，<br /> 要想详细了解各个硬件的使用原理，代码，编程逻辑和使用的函数及其功能，可以到课程设计报告中查看，也可以在下方链接中的进展报告查看。
+                            </p>
+                            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td height="17">&nbsp;</td>
+            <td colspan="5" valign="top" background="images/line.jpg">
+                <hr size="10" />
+            </td>
+        </tr>
+        <tr>
+            <td height="194">&nbsp;</td>
+            <td colspan="4" valign="top" background="images/link.jpg">
+                <table width="1451" height="149" border="0">
+                    <!--DWLayoutTable-->
+                    <tr>
+                        <td width="175" height="2"></td>
+                        <td width="50"></td>
+                        <td width="1140"></td>
+                        <td width="68"></td>
+                    </tr>
+                    <tr>
+                        <td height="4"></td>
+                        <td colspan="2" valign="top">
+                            <hr />
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td height="18"></td>
+                        <td colspan="2" valign="top">
+                            <h3>》链接</h3>
+                        </td>
+                        <td></td>
+                    </tr>
+
+
+                    <tr>
+                        <td height="24"></td>
+                        <td></td>
+                        <td valign="top">
+                            <h3 class="STYLE5"><a href="documents/process.docx">》进展报告</a></h3>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td height="21"></td>
+                        <td></td>
+                        <td valign="top">
+                            <h3 class="STYLE5"><a href="documents/sum.docx">》课程总结报告</a></h3>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td height="66"></td>
+                        <td></td>
+                        <td>&nbsp;</td>
+                        <td></td>
+                    </tr>
+
+
+                    <!--DWLayoutTable-->
+
+
+
+
+
+
+
+
+
+                </table>
+            </td>
+            <td valign="top" bgcolor="#CCCCCC">
+                <!--DWLayoutEmptyCell-->&nbsp;</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
